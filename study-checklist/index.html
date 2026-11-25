@@ -394,7 +394,6 @@ function readKey() {
   if (key) {
     try {
       localStorage.setItem('sdl2:key', key);
-      if (localStorage.getItem('sdl2:key') === key) history.replaceState(null, '', location.pathname + location.search);
     } catch (e) {}
     return key;
   }
